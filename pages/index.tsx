@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 import Bridge from "../components/Icons/Bridge";
-import Logo from "../components/Icons/Logo";
 import Modal from "../components/Modal";
 import cloudinary from "../utils/cloudinary";
 import getBase64ImageUrl from "../utils/generateBlurPlaceholder";
@@ -57,13 +56,20 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
                             </span>
                             <span className="absolute bottom-0 left-0 right-0 h-[400px] bg-gradient-to-b from-black/0 via-black to-black"></span>
                         </div>
-                        <Logo />
+                        <p className="mb-4 text-4xl font-medium">
+                            Jarek Olszewski
+                        </p>
                         <h1 className="mb-4 mt-8 text-base font-bold uppercase tracking-widest">
-                            12/12/2023
+                            06/12/2023
                         </h1>
                         <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-                            Our incredible Next.js community got together in San
-                            Francisco for our first ever in-person conference!
+                            Serdecznie witam, galeria zdjęć, które uwieczniły
+                            wyjątkowe chwile z tego niepowtarzalnego wydarzenia.
+                        </p>
+                        <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
+                            Mam nadzieję, że każda z zamieszczonych fotografii
+                            pozwoli na współdzielenie emocji i przeżyć
+                            związanych z tym wyjątkowym momentem.
                         </p>
                         <div className="z-10 mt-6 space-x-2">
                             <a
